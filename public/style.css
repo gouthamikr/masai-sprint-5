@@ -10,13 +10,12 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  /* background: #f8f8f8; */
-  background-color: black;
-  color: black;
+  background-size: 100%;
+  background-image: url("https://www.gadgetsnow.com/img/70334092/Master.jpg");
   font-family: "Roboto", sans-serif;
 }
 .chat__section {
-  width: 800px;
+  width: 1250px;
   max-width: 90%;
   margin: auto;
   background: #fff;
