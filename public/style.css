@@ -12,6 +12,7 @@ body {
   min-height: 100vh;
   background-size: 100%;
   background-image: url("https://www.gadgetsnow.com/img/70334092/Master.jpg");
+  background-repeat: no-repeat;
   font-family: "Roboto", sans-serif;
 }
 .chat__section {
