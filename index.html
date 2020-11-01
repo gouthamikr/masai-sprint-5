@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WhatsApp</title>
+    <link
+      rel="icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/766px-WhatsApp.svg.png"
+    />
     <link rel="stylesheet" href="/style.css" />
     <link
       rel="stylesheet"
@@ -21,17 +25,63 @@
   <body>
     <section class="chat__section">
       <div class="brand">
-        <img height="40" src="/wassup.png" alt="" />
-        <h1>Wassup</h1>
+        <div class="row">
+          <div class="col-3">
+            <div class="d-flex">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/766px-WhatsApp.svg.png"
+                height="50px"
+                width="50px"
+              />
+              <div style="margin-left: 30px; margin-top: 14px">
+                <i class="fad fa-circle-notch"></i>
+              </div>
+              <div
+                style="margin-top: 10px; margin-left: 10px; color: lightgrey"
+              >
+                <i
+                  style="color: lightgrey"
+                  class="fas fa-comment-alt-lines p-2 rounded-circle"
+                ></i>
+              </div>
+              <div
+                style="margin-top: 14px; margin-left: 10px; color: lightgrey"
+              >
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-9">
+            <i
+              style="background-color: lightgrey; margin-top: 10px"
+              class="far fa-users border p-2 rounded-circle text-light"
+            ></i>
+            <span class="ml-2">Friends</span>
+            <i
+              class="far fa-search mt-3"
+              style="float: right; margin-right: 10px; color: lightgrey"
+            ></i>
+          </div>
+        </div>
       </div>
       <div class="message__area"></div>
-      <div>
-        <textarea
-          id="textarea"
-          cols="30"
-          rows="1"
-          placeholder="Write a message..."
-        ></textarea>
+      <div class="row" style="letter-spacing: 5px; margin: auto">
+        <div class="col-12 border p-2">
+          <i class="fal fa-smile-beam" style="color: lightgrey"></i>
+          <i class="far fa-paperclip" style="color: lightgrey"></i>
+          <input
+            id="textarea"
+            cols="30"
+            rows="1"
+            style="border: none; outline: lightgrey"
+            placeholder="Type a message..."
+          />
+          <i
+            id="textarea"
+            class="fad fa-paper-plane"
+            style="color: lightgrey; float: right; margin-top: 5px"
+          ></i>
+        </div>
       </div>
     </section>
     <script src="/socket.io/socket.io.js"></script>
